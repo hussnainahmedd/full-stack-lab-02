@@ -27,7 +27,7 @@ This project demonstrates advanced CSS layout and styling
 techniques together with Bootstrap Flex utilities.
 
 ## Author
-Student Name
+Hussnain Ahmad
 
 ## Lab
 Full Stack Web Development - Lab 2
