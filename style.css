@@ -22,7 +22,7 @@ body {
 /* CSS FLEXBOX */
 .hero-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 50px;
 }
@@ -103,7 +103,7 @@ body {
     position: relative;
 }
 /* PSEUDO ELEMENT */
-.profile-card::after {
+.profile-card::before {
     content: "PROFILE";
     position: absolute;
     top: -12px;
@@ -124,11 +124,11 @@ body {
 ========================================= */
 .skills-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
     gap: 20px;
-    flex-direction: column; }
+    flex-direction: row; }
 .skill-box {
     flex: 1 1 200px;
     background: white;
@@ -169,7 +169,7 @@ body {
     0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease; }
 .project-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
 }
 /* =========================================
    PROJECT IMAGE
@@ -190,7 +190,7 @@ body {
    CSS FILTER
 ========================================= */
 .grayscale img {
-    filter: brightness(70%);
+    filter: grayscale(100%);
 }
 .grayscale:hover img {
     filter: grayscale(0%); }
@@ -231,7 +231,7 @@ body {
     0 5px 20px rgba(0, 0, 0, 0.1);
 }
 .featured-badge {
-    position: relative;
+    position: absolute;
     top: 15px;
     right: 15px;
     background: #ffc107;
@@ -259,7 +259,7 @@ body {
 ========================================= */
 @media (max-width: 768px) {
     .hero-content {
-    flex-direction: column;
+    flex-direction: row;
  
     text-align: center;
     }
